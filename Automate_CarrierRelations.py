@@ -1,5 +1,5 @@
 # Copyright (c) 2023 Ameed Jamous - TelecomsXChange.com
-# This script is also compatiable with NeuTrafix Market Place
+# This script is also compatiable with NeuTrafix Market Place API
 
 import requests
 from requests.auth import HTTPDigestAuth
