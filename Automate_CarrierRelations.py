@@ -1,4 +1,5 @@
 # Copyright (c) 2023 Ameed Jamous - TelecomsXChange.com
+# This script is also compatiable with NeuTrafix Market Place
 
 import requests
 from requests.auth import HTTPDigestAuth
@@ -26,9 +27,13 @@ logger.info('🚀 TelecomsXChange (TCXC) Carrier Relations Automation Script sta
 username = '{Enter API login}'
 password = '{Enter API key}'
 
-# API endpoints
+# TCXC API endpoints
 search_url = 'https://apiv2.telecomsxchange.com/marketview/search'
 interconnect_url = 'https://apiv2.telecomsxchange.com/buyers/interconnect'
+
+# NeuTrafix API endpoints
+# search_url = 'https://apiv2.neutrafix.telin.net/marketview/search'
+# interconnect_url = 'https://apiv2.neutrafix.telin.net/buyers/interconnect'
 
 # Headers for the requests
 headers = {
