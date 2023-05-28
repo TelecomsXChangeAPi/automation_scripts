@@ -1,12 +1,23 @@
-## TelecomsXChange Carrier Relations Automation Script
+## TelecomsXChange Carrier Relations Automation Scripts
 
-This Python script automates the process of searching for and purchasing voice routes using the TelecomsXChange API. It replaces a typically manual, time-consuming process with a streamlined, efficient approach.
+These Python scripts automate various tasks in the management of telecom services using the TelecomsXChange API. They replace typically manual, time-consuming processes with streamlined, efficient approaches.
 
-### Features
+### Scripts
 
-- 🔍 Automated Searching: Utilizing TelecomsXChange's Market View API, the script automatically searches for the best routes based on price and quality.
-- ⚙️ Automated Purchasing: Once optimal routes are identified, the script uses the Interconnect API to establish connections with these routes.
-- 📈 Detailed Logging: All actions and responses are logged in real-time, allowing for easy tracking, debugging, and analysis.
+1. **Automated Searching and Purchasing (Automate_CarrierRelations.py):** This script automates the process of searching for and purchasing voice routes.
+
+    - Features
+        - 🔍 Automated Searching: Utilizing TelecomsXChange's Market View API, the script automatically searches for the best routes based on price and quality.
+        - ⚙️ Automated Purchasing: Once optimal routes are identified, the script uses the Interconnect API to establish connections with these routes.
+        - 📈 Detailed Logging: All actions and responses are logged in real-time, allowing for easy tracking, debugging, and analysis.
+
+2. **Automated Trouble Ticketing (Automate_LowQoS_TT.py):** This script automates the detection and escalation of low QoS calls to carriers responsible for terminating the calls.
+
+    - Features
+        - 🚫 Automated Call Quality Detection: The script checks the call history from the TelecomsXChange API and identifies calls with low quality based on certain disconnect reasons.
+        - 📨 Automated Trouble Ticketing: The script sends a message to the respective vendor via the TelecomsXChange messaging API, automatically escalating the issue.
+        - 🎟 Unique Trouble Ticket IDs: Each message sent has a unique ticket ID to differentiate between different issues.
+        - ⏰ Real-time Operation: The script is designed to run in real time, checking the past 30 minutes for any low-quality calls.
 
 ### Prerequisites
 
@@ -14,16 +25,14 @@ This Python script automates the process of searching for and purchasing voice r
 - requests library
 - TCXC API Login and Key 
 
-
 ### Usage
 
-To run the script:
+To run the scripts:
 
 ```shell
-python3 automate_cr.py
+python3 Automate_CarrierRelations.py
+python3 Automate_LowQoS_TT.py
 ```
-
-The script will search for voice routes, purchase the optimal ones, and log the details.
 
 ### Contributing
 
