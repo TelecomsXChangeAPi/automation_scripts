@@ -2,7 +2,7 @@
 Automate SIP Trunk Testing on TelecomsXChange Platform
 Copyright (c) 2023 TelecomsXChange. All rights reserved.
 
-This script automates the process of testing SIP trunks on the TelecomsXChange platform.
+This script automates the process of testing SIP trunks on the TelecomsXChange/NeuTrafix platforms.
 It fetches a list of all SIP providers, lets the user choose a provider for testing, 
 fetches test numbers based on the user's selected country and network, and then initiates 
 a test call to the chosen numbers through the selected provider.
@@ -25,15 +25,18 @@ import requests
 from requests.auth import HTTPDigestAuth
 import getpass
 
-# Base API URL
+# TCXC Base API URL
 base_url = "https://apiv2.telecomsxchange.com"
+                           
+# NeuTrafix (NTX) Base API URL
+# base_url = "https://apiv2.neutrafix.telin.net"
 
 # API endpoints
 sellers_list_endpoint = "/sellers/list"
 get_numbers_endpoint = "/buyers/tools/getnumbers"
 route_test_endpoint = "/buyers/routetest"
 
-# TelecomsXChange API Credentials
+# TCXC/NTX API Credentials
 username = ''
 password = ''
 
