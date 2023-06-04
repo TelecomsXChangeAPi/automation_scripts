@@ -20,11 +20,6 @@ username = input("Please enter your username: ")
 password = getpass.getpass("
 
 
-from tabulate import tabulate
-import requests
-from requests.auth import HTTPDigestAuth
-import getpass
-
 # TCXC Base API URL
 base_url = "https://apiv2.telecomsxchange.com"
                            
