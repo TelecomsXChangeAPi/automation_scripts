@@ -1,4 +1,4 @@
-## TelecomsXChange Carrier Relations Automation Scripts
+## TelecomsXChange (TCXC) Automation Scripts Examples
 
 These Python scripts automate various tasks in the management of telecom services using the TelecomsXChange API. They replace typically manual, time-consuming processes with streamlined, efficient approaches.
 
