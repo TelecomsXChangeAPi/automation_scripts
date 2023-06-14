@@ -23,7 +23,7 @@ These Python scripts automate various tasks in the management of telecom service
         - 📤 Automated Messaging: Once the DID numbers are listed, the script sends a message to all the buyers notifying them about the new numbers for sale.
         - 🎈 Detailed Logging: All actions and responses are logged in real-time, allowing for easy tracking, debugging, and analysis.
 
-** Comparison Table Example **
+**Comparison Table Example**
 
 | Task                                 | Automation Benefits                                     | Manual Work Challenges                                      |
 |--------------------------------------|---------------------------------------------------------|-------------------------------------------------------------|
