@@ -23,6 +23,28 @@ These Python scripts automate various tasks in the management of telecom service
         - 📤 Automated Messaging: Once the DID numbers are listed, the script sends a message to all the buyers notifying them about the new numbers for sale.
         - 🎈 Detailed Logging: All actions and responses are logged in real-time, allowing for easy tracking, debugging, and analysis.
 
+** Comparison Table Example **
+
+| Task                                 | Automation Benefits                                     | Manual Work Challenges                                      |
+|--------------------------------------|---------------------------------------------------------|-------------------------------------------------------------|
+| Automated Searching and Purchasing   | - Faster search and identification of optimal routes     | - Time-consuming manual search                               |
+|                                      | - Reduced human error in purchasing                      | - Higher chances of errors in purchasing                     |
+|                                      | - Real-time logging for easy tracking and analysis       | - Manual logging and tracking can be cumbersome              |
+| Automated Trouble Ticketing          | - Immediate detection and escalation of low QoS calls    | - Delayed detection and response to low QoS calls            |
+|                                      | - Automated ticketing for efficient issue resolution     | - Manual ticket creation and escalation                      |
+|                                      | - Unique ticket IDs for better issue tracking             | - Difficulty in tracking and organizing manual escalations    |
+| Automated Virtual Numbers Selling    | - Efficient listing of new DID numbers for sale          | - Time-consuming manual listing                              |
+|                                      | - Automated messaging to notify buyers                   | - Manual communication with each buyer individually          |
+|                                      | - Real-time logging for easy tracking and analysis       | - Manual logging and tracking can be cumbersome              |
+| Generate Ai Routing Strategies       | - Generates AI-based routing strategies from realtime voice, SMS market rates                 | - Manual creation of routing strategies can be complex       |
+|                                      | - Consistent and optimized routing decisions              | - Limited optimization and scalability with manual approach  |
+| Automate Routes Testing              | - Automated testing of route functionality               | - Time-consuming manual testing                              |
+|                                      | - Rapid identification of route issues                    | - Manual identification of route issues can be challenging   |
+|                                      | - Detailed logging for easy analysis and debugging        | - Manual logging and analysis can be time-consuming          |
+
+
+
+
 ### Prerequisites
 
 - Python 3.6+
